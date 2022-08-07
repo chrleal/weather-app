@@ -6,8 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="card-container">
+    <header class="header">
+      <form id="form-search" action="#">
+        <input type="text" placeholder="Search City" class="search-location" required>
+        <input type="submit" id="submitBtn" style="display: none;">
+        <span class="material-icons-outlined">
+          search
+          </span>
+      </form>
+    </header>
+    <div class="content">
+      <div class="heading-container"></div>
+      <div class="temp-container hidden">
+        <div class="temp-content"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

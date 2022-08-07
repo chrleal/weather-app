@@ -1,3 +1,2 @@
 import { api } from "./api";
-
-api.getData("Recife");
+import { dom } from "./dom";
