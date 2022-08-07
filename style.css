@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-image: url(images/background2.jpg);
+  background-size: 1920px 1080px;
+  background-position:center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.card-container{
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  backdrop-filter: blur(6px);
+}
+
+.heading-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  width: 50%;
+  background-color: transparent;
+  border-radius: 20px;
+  padding-right: 5px;
+}
+
+input{
+  text-align: center;
+  width: 300px;
+  padding-left: 28px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+input:focus{
+  outline: none;
+}
+
+input::placeholder{
+  color: #ffffff
+}
+input:focus::placeholder{
+  color: transparent;
+}
+
+span{
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  background-color:#212121;
+  gap: 30px;
+}
+
+h1{
+font-size: 36px;
+}
+
+h2{
+position: relative;
+bottom: 5px;
+font-size: 18px;
+color: rgba(255, 255, 255, 0.7);
+letter-spacing: 3px;
+}
+
+.temp-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  border: 6px solid rgb(255, 255, 255);
+}
+
+.temp-container.hidden {
+  display: none;
+}
+
+.temp-content{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.temp{
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+
+.celsius{
+  font-size: 30px;
+  font-weight: bold;
+}
