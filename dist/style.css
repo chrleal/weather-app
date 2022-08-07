@@ -103,14 +103,14 @@ span{
 }
 
 h1{
-font-size: 36px;
+font-size: 46px;
 }
 
 h2{
 position: relative;
 bottom: 5px;
-font-size: 18px;
-color: rgba(255, 255, 255, 0.7);
+font-size: 23px;
+color: rgba(190, 190, 190, 0.7);
 letter-spacing: 3px;
 }
 

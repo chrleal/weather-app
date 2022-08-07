@@ -34,7 +34,7 @@ const api = (() => {
     }
   }
 
-  return { getData, transformData};
+  return { getData };
 })();
 
 export { api };

@@ -23,7 +23,7 @@ const dom = (() => {
     });
   })();
   
-  // Validates the text input
+  // Validates text input
   function validateInput() {
     if (searchLocation.value != "") {
       return true;
@@ -32,7 +32,7 @@ const dom = (() => {
     }
   }
 
-  // Search location
+  // Submit form
   async function submitCity() {
     if (validateInput() == true) {
       const weatherData = await api.getData(searchLocation.value);
@@ -72,6 +72,12 @@ const dom = (() => {
     tempContent.innerHTML = '';
     tempContainer.classList.add('hidden');
   }
+
+  // Fetch a chosen data on first access
+  (async function displayFirst() {
+    const firstData = await api.getData("São Paulo");
+    displayWeather(firstData);
+  })();
 
   return {submitCity}
 })();
