@@ -46,11 +46,11 @@ const dom = (() => {
   // Display weather conditions
   function displayWeather(weatherData){
 
-    const location = document.createElement('h1');
+    const location = document.createElement('h2');
     location.textContent = weatherData.objData.cityName;
     headingContainer.appendChild(location);
 
-    const condition = document.createElement('h2');
+    const condition = document.createElement('h3');
     condition.textContent = weatherData.objData.weather;
     headingContainer.appendChild(condition);
 
