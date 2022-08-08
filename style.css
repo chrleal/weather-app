@@ -31,6 +31,7 @@ body{
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .overlay{
@@ -45,12 +46,14 @@ body{
 }
 
 .header-logo{
-  padding: 30px 10px 100px 0;
+  /* flex: 0.2; */
+  padding: 30px 10px 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   z-index: 2;
+  margin-bottom: auto;
 }
 
 .sun{
@@ -71,9 +74,15 @@ body{
   width: 493px;
   height: 493px;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
+  overflow-x:hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 2;
+  margin-bottom: 20px;
+}
+
+.footer{
+margin: auto;
 }
 
 .header{
@@ -82,18 +91,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color:rgba(33, 33, 33, 1); */
   backdrop-filter: blur(6px);
-}
-
-.heading-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 form{
@@ -161,6 +159,16 @@ h3{
   letter-spacing: 3px;
 }
 
+.heading-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .temp-container{
   display: flex;
   align-items: center;
@@ -176,6 +184,7 @@ h3{
 }
 
 .temp-content{
+  flex: 1;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -191,4 +200,22 @@ h3{
 .celsius{
   font-size: 30px;
   font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.8); 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
